@@ -7,5 +7,6 @@ namespace E_Library.Controllers
     [ApiController]
     public class BorrowingRecordController : ControllerBase
     {
+
     }
 }
