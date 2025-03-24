@@ -2,10 +2,10 @@
 {
     public class RegisterDTO
     {
-        public string Name { get; set; } = null!;
-
-        public string UniversityId { get; set; } = null!;
-
-        public string Role { get; set; } = null!;
+        public string Name { get; set; }  
+        public string Email { get; set; } 
+        public string UniversityId { get; set; }
+        public string Role { get; set; }
+        public string Password { get; set; }
     }
 }

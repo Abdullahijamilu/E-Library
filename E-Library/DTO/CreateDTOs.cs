@@ -9,5 +9,6 @@
         public string Description { get; set; } = null!;
 
         public string? FileUrl { get; set; }
+        public int Year { get; set; }
     }
 }

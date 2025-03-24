@@ -5,15 +5,15 @@ namespace E_Library.Models;
 
 public partial class Discussion
 {
-    public int DiscussionId { get; set; }
+    public Guid DiscussionId { get; set; }
 
     public string Question { get; set; } = null!;
 
     public string? Answer { get; set; }
 
-    public int UserId { get; set; }
+    public string UserId { get; set; }
 
-    public int BookId { get; set; }
+    public Guid BookId { get; set; }
 
     public virtual Book Book { get; set; } = null!;
 

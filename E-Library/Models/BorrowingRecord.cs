@@ -5,11 +5,11 @@ namespace E_Library.Models;
 
 public partial class BorrowingRecord
 {
-    public int BorrowingRecordId { get; set; }
+    public Guid BorrowingRecordId { get; set; }
 
-    public int UserId { get; set; }
+    public string UserId { get; set; }
 
-    public int BookId { get; set; }
+    public Guid BookId { get; set; }
 
     public DateTime BorrowDate { get; set; }
 
