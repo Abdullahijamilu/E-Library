@@ -22,4 +22,5 @@ RUN dotnet publish "E-Library.csproj" -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "E-Library.dll"]
+ENTRYPOINT COPY E-Library.csproj ./
+
